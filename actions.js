@@ -48,36 +48,3 @@ function thumbdownComment(id) {
         id
     }
 }
-
-dispatch({
-    type: ADD_COMMENT,
-    text: 'kolejny nowy komentarz!',
-    id: uuid.v4()
-})
-
-dispatch({
-    type: REMOVE_COMMENT,
-    id: 9
-})
-
-dispatch({
-    type: EDIT_COMMENT,    
-    id: 10,
-    text: 'wyedytowany tekst komentarza'
-})
-
-dispatch({
-    type: THUMB_UP_COMMENT,
-    id: 11
-})
-
-dispatch({
-    type: THUMB_DOWN_COMMENT,
-    id: 12
-})
-
-boundAddComment('nowy komentarz!');
-boundRemoveComment(20);
-boundEditComment(21, 'edytowany komentarz!');
-boundThumbUpComment(22);
-boundThumbdownComment(23);
